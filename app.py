@@ -24,11 +24,11 @@ def callback():
     userText = decoded["events"][0]['message']['text']
     #sendText(user,userText)
     if (userText == 'blackpink') :
-        sendText(user'in your area')
+        sendText(user,'in your area')
     elif (userText == 'เธอสวย') :
-       sendText(user 'แน่นอน')
+       sendText(user,'แน่นอน')
     else :
-        sendText(user'ยอมมง555')
+        sendText(user,'ยอมมง555')
     return '',200
 
 def sendText(user, text):
