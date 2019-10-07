@@ -20,8 +20,8 @@ def callback():
     json_line = request.get_json()
     json_line = json.dumps(json_line)
     decoded = json.loads(json_line)
-    user = decoded["events"][0]['replyToken']
-    userText = decoded["events"][0]['message']['text']
+    user = decoded["originalDetectintentrequest"][payload]['data']['replyToken']
+    userText = decoded["queryResult"][0]['intent']['displayname']
     #sendText(user,userText)
     if (userText == 'blackpink') :
         sendText(user,'in your area')
